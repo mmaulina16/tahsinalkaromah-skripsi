@@ -12,7 +12,7 @@ if (isset($_POST['btn_simpan'])) { // jika tombol simpan diklik
     $universitas = $_POST['universitas'];
     $fakultas = $_POST['fakultas'];
     $prodi = $_POST['prodi'];
-    $batas_belajar = mysqli_real_escape_string($koneksi, $_POST['batas_tahsin']);
+    $batas_belajar = mysqli_real_escape_string($koneksi, $_POST['batas_belajar']);
     $kemampuan = $_POST['kemampuan'];
     $kelas_tahsin = mysqli_real_escape_string($koneksi, $_POST['kelas_tahsin']);
     $alasan = mysqli_real_escape_string($koneksi, $_POST['alasan']);

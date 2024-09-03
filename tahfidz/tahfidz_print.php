@@ -42,7 +42,7 @@
 
     // Ambil parameter GET dari URL
     $filter_kls = isset($_GET['filter_kls']) ? $_GET['filter_kls'] : '';
-    $filter_bln = isset($_GET['filter_bln']) ? $_GET['filter_bln'] : '';
+    $filter_bln = isset($_POST['filter_bln']) ? $_POST['filter_bln'] : '';
 
     // Query SQL untuk memilih semua kolom yang diperlukan dengan filter
     $query = "SELECT id_tahfidz, nama_pengajar, nama_anggota, npm, kelas, jadwal_tahfidz, batas_tahfidz, kemajuan, perbaikan FROM halaqoh_tahfidz WHERE 1=1";
@@ -51,7 +51,7 @@
         $query .= " AND kelas = '" . mysqli_real_escape_string($koneksi, $filter_kls) . "'";
     }
     if ($filter_bln != '') {
-        $query .= " AND jadwal_tahfidz = '" . mysqli_real_escape_string($koneksi, $filter_bln) . "'";
+        $query .= " AND MONTH(jadwal_tahfidz) = '" . mysqli_real_escape_string($koneksi, $filter_bln) . "'";
     }
     ?>
 

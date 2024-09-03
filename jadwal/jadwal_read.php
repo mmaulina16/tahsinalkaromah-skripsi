@@ -19,7 +19,6 @@
                 <thead>
                     <tr>
                         <th>No</th>
-
                         <th>Kelas</th>
                         <th>Waktu</th>
                         <th>Tempat</th>
@@ -33,10 +32,11 @@
                     <?php
                     $no = 1;
                     $search = isset($_GET['search']) ? $_GET['search'] : '';
-                    $query = "SELECT * FROM jadwal";
+                    $query = "SELECT * FROM jadwal ORDER BY waktu DESC";
                     if ($search) {
-                        $query .= " WHERE kelas_tahsin LIKE '%" . mysqli_real_escape_string($koneksi, $search) . "%'";
-                    }; 
+                        $searchEscaped = mysqli_real_escape_string($koneksi, $search);
+                        $query .= " WHERE kelas_tahsin LIKE '%$searchEscaped%'";
+                    }
                     $data = mysqli_query($koneksi, $query);
                     while ($row = mysqli_fetch_array($data)) {
                     ?>

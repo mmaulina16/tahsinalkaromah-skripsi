@@ -55,7 +55,7 @@
         $query .= " AND kelas_tahsin = '" . mysqli_real_escape_string($koneksi, $filter_kls) . "'";
     }
     if ($filter_bln != '') {
-        $query .= " AND tanggal_pendaftaran = '" . mysqli_real_escape_string($koneksi, $filter_bln) . "'";
+        $query .= " AND MONTH(tanggal_pendaftaran) = '" . mysqli_real_escape_string($koneksi, $filter_bln) . "'";
     }
     ?>
 
@@ -75,9 +75,9 @@
                 <h3 style="text-align:center;">LAPORAN PENDAFTARAN ANGGOTA</h3>
                 <hr>
 
-                <table class="table" align="center" border="1" style="text-align:center;">
+                <table class="table" align="center" border="1">
                     <tr>
-                        <th>No.</th>
+                        <th style="width: 15px;">No.</th>
                         <th>NPM</th>
                         <th>Nama Anggota</th>
                         <th>Jenis Kelamin</th>
@@ -100,8 +100,8 @@
                         if ($row > 0) {
                             while ($data = mysqli_fetch_array($sql)) {
                                 echo "<tr>";
-                                echo "<td>" . $no++ . "</td>";
-                                echo "<td>" . $data['npm'] . "</td>";
+                                echo "<td style=text-align:center;>" . $no++ . "</td>";
+                                echo "<td style=text-align:center;>" . $data['npm'] . "</td>";
                                 echo "<td>" . $data['nama_anggota'] . "</td>";
                                 echo "<td>" . $data['jenis_kelamin'] . "</td>";
                                 echo "<td>" . $data['tanggal_lahir'] . "</td>";
@@ -112,7 +112,7 @@
                                 echo "<td>" . $data['prodi'] . "</td>";
                                 echo "<td>" . $data['kelas_tahsin'] . "</td>";
                                 echo "<td>" . $data['alasan'] . "</td>";
-                                echo "<td>" . $data['tanggal_pendaftaran'] . "</td>";
+                                echo "<td style=text-align:center;>" . $data['tanggal_pendaftaran'] . "</td>";
                                 echo "</tr>";
                             }
                         } else {

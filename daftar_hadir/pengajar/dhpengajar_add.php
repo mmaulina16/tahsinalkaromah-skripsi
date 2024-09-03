@@ -27,7 +27,7 @@ if (isset($_POST['btn_simpan'])) { // jika tombol simpan diklik
 <div class="container-fluid">
     <div class="card">
         <div class="card-body">
-            <h5 class="card-title fw-semibold mb-4">Tambah Daftar Hadir Anggota</h5>
+            <h5 class="card-title fw-semibold mb-4">Tambah Daftar Hadir Pengajar</h5>
             <a href="?page=dhpengajar_read" class="btn btn-success btn-sm"><i class="ti ti-arrow-left"></i>Kembali</a>
             <hr>
             <form action="" method="post">

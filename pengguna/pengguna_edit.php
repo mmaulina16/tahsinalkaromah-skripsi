@@ -27,7 +27,7 @@ $data = mysqli_fetch_array($query); // mengambil data dari pengguna lalu ditampu
     <div class="card">
         <div class="card-body">
             <h5 class="card-title fw-semibold mb-4">Ubah Data Pengguna</h5>
-            <?php if ($_SESSION['status'] != 'Anggota') { ?>
+            <?php if ($_SESSION['status'] == 'Admin') { ?>
                 <a href="?page=anggota_read" class="btn btn-success btn-sm"><i class="ti ti-arrow-left"></i>Kembali</a>
             <?php } ?>
             <hr>

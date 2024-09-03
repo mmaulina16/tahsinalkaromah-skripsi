@@ -45,7 +45,7 @@
                         <?php
                         $no = 1;
                         $search = isset($_GET['search']) ? $_GET['search'] : '';
-                        $query = "SELECT * FROM anggota WHERE status_ajuan = 'Diverifikasi' ORDER BY npm ASC";
+                        $query = "SELECT * FROM anggota WHERE status_ajuan = 'Diverifikasi'";
                         if ($search) {
                             $query .= " AND nama_anggota LIKE '%" . mysqli_real_escape_string($koneksi, $search) . "%'";
                         }

@@ -71,7 +71,7 @@
                 <h3 style="text-align:center;">LAPORAN UMPAN BALIK</h3>
                 <hr>
 
-                <table class="table" align="center" border="1" style="text-align:center;">
+                <table class="table" align="center" border="1">
                     <tr>
                         <th>No.</th>
                         <th>Kelas</th>
@@ -88,9 +88,9 @@
                         if ($row > 0) {
                             while ($data = mysqli_fetch_array($sql)) {
                                 echo "<tr>";
-                                echo "<td>" . $no++ . "</td>";
+                                echo "<td style=text-align:center;>" . $no++ . "</td>";
                                 echo "<td>" . $data['kelas'] . "</td>";
-                                echo "<td>" . $data['rating'] . "</td>";
+                                echo "<td style=text-align:center;>" . $data['rating'] . "</td>";
                                 echo "<td>" . $data['alasan_rating'] . "</td>";
                                 echo "<td>" . $data['saran'] . "</td>";
                                 echo "</tr>";

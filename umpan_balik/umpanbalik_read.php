@@ -2,7 +2,9 @@
     <div class="card">
         <div class="card-body">
             <h5 class="card-title fw-semibold mb-4">Umpan Balik</h5>
+            <?php if ($_SESSION['status'] != 'Admin') { ?>
             <a href="?page=umpanbalik_add" class="btn btn-success btn-sm"><i class="ti ti-plus"></i>Tambah Data</a>
+            <?php } ?>
             <?php if ($_SESSION['status'] != 'Anggota') { ?>
                 <a href="?page=umpanbalik_report" class="btn btn-primary btn-sm"><i class="ti ti-report"></i> Laporan</a>
             <?php } ?>

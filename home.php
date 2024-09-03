@@ -133,6 +133,8 @@
             </div>
         </div>
 
+        <!-- FORM PENDAFTARAN -->
+
         <div class="card">
             <div class="card-body" id="pendaftaran">
                 <!-- Navigation Buttons -->
@@ -148,21 +150,21 @@
                     <div class="form-slide" id="form-anggota">
                         <h4 class="text-center mt-3">Pendaftaran Anggota Tahsin Al - Karomah</h4>
                         <?php
-                        if (isset($_POST['btn_simpan'])) { // jika tombol simpan diklik
+                        if (isset($_POST['simpan_anggota'])) { // jika tombol simpan diklik
                             $npm = $_POST['npm'];
-                            $nama_anggota = $_POST['nama_anggota'];
+                            $nama_anggota = mysqli_real_escape_string($koneksi, $_POST['nama_anggota']);
                             $jenis_kelamin = $_POST['jenis_kelamin'];
                             $tanggal_lahir = $_POST['tanggal_lahir'];
                             $no_telp = $_POST['no_telp'];
                             $email = $_POST['email'];
-                            $alamat = $_POST['alamat'];
-                            $nama_wali = $_POST['nama_wali'];
+                            $alamat = mysqli_real_escape_string($koneksi, $_POST['alamat']);
+                            $nama_wali = mysqli_real_escape_string($koneksi, $_POST['nama_wali']);
                             $no_telp_wali = $_POST['no_telp_wali'];
-                            $universitas = $_POST['universitas'];
-                            $fakultas = $_POST['fakultas'];
-                            $prodi = $_POST['prodi'];
-                            $batas_belajar = $_POST['batas_belajar'];
-                            $kemampuan = $_POST['kemampuan'];
+                            $universitas = mysqli_real_escape_string($koneksi, $_POST['universitas']);
+                            $fakultas = mysqli_real_escape_string($koneksi, $_POST['fakultas']);
+                            $prodi = mysqli_real_escape_string($koneksi, $_POST['prodi']);
+                            $batas_belajar = mysqli_real_escape_string($koneksi, $_POST['batas_belajar']);
+                            $kemampuan = mysqli_real_escape_string($koneksi, $_POST['kemampuan']);
                             $kelas_tahsin = mysqli_real_escape_string($koneksi, $_POST['kelas_tahsin']);
                             $alasan = mysqli_real_escape_string($koneksi, $_POST['alasan']);
 
@@ -197,13 +199,14 @@
                                                     // print_r($_POST);
                                                     // print_r($query);
                                                     echo "<script> alert('Pendaftaran anggota berhasil ditambahkan!')</script>";
-                                                    echo "<meta http-equiv='refresh' content='0;url=?page=dfanggota_read'>";
+                                                    // echo "<meta http-equiv='refresh' content='0;url=?page=dfanggota_read'>";
                                                 } else {
 
                                                     // print_r($_POST);
                                                     // print_r($query);
                                                     echo "<script> alert('Pendaftaran anggota gagal ditambahkan!')</script>";
-                                                    echo "<meta http-equiv='refresh' content='0;url=?page=dfanggota_read'>";
+                                                    // echo "<meta http-equiv='refresh' content='0;url=?page=dfanggota_read'>";
+                                                    echo "Error: " . mysqli_error($koneksi);
                                                 }
                                             } else {
                                                 echo "<script>alert('Maaf, terjadi kesalahan saat mengunggah file.')</script>";
@@ -307,7 +310,7 @@
                                 <label for="foto" class="form-label">Foto</label>
                                 <input type="file" class="form-control" id="foto" name="foto" accept="image/*" required>
                             </div>
-                            <button type="submit" class="btn btn-primary" name="btn_simpan">Simpan</button>
+                            <button type="submit" class="btn btn-primary" name="simpan_anggota">Simpan</button>
                             <button type="reset" class="btn btn-danger">Batal</button>
                         </form>
                     </div>
@@ -316,16 +319,16 @@
                     <div class="form-slide" id="form-pengajar">
                         <h4 class="text-center mt-3">Pendaftaran Pengajar Tahsin Al - Karomah</h4>
                         <?php
-                        if (isset($_POST['btn_simpan'])) { // jika tombol simpan diklik
-                            $nama_pengajar = $_POST['nama_pengajar'];
+                        if (isset($_POST['simpan_pengajar'])) { // jika tombol simpan diklik
+                            $nama_pengajar = mysqli_real_escape_string($koneksi, $_POST['nama_pengajar']);
                             $jenis_kelamin = $_POST['jenis_kelamin'];
                             $tanggal_lahir = $_POST['tanggal_lahir'];
-                            $alamat = $_POST['alamat'];
+                            $alamat = mysqli_real_escape_string($koneksi, $_POST['alamat']);
                             $no_telp = $_POST['no_telp'];
                             $email = $_POST['email'];
-                            $lulusan = $_POST['lulusan'];
-                            $jurusan = $_POST['jurusan'];
-                            $hafalan = $_POST['hafalan'];
+                            $lulusan = mysqli_real_escape_string($koneksi, $_POST['lulusan']);
+                            $jurusan = mysqli_real_escape_string($koneksi, $_POST['jurusan']);
+                            $hafalan = mysqli_real_escape_string($koneksi, $_POST['hafalan']);
                             $kelas_tahsin = mysqli_real_escape_string($koneksi, $_POST['kelas_tahsin']);
 
                             // Proses unggah foto
@@ -394,10 +397,11 @@
 
                                 if ($query) {
                                     echo "<script>alert('Pendaftaran pengajar berhasil ditambahkan!')</script>";
-                                    echo "<meta http-equiv='refresh' content='0;url=?page=dfpengajar_read'>";
+                                    // echo "<meta http-equiv='refresh' content='0;url=?page=dfpengajar_read'>";
                                 } else {
                                     echo "<script>alert('Pendaftaran pengajar gagal ditambahkan!')</script>";
-                                    echo "<meta http-equiv='refresh' content='0;url=?page=dfpengajar_read'>";
+                                    // echo "<meta http-equiv='refresh' content='0;url=?page=dfpengajar_read'>";
+                                    echo "Error: " . mysqli_error($koneksi);
                                 }
                             }
                         }
@@ -467,7 +471,7 @@
                                 <label for="inputPortofolio" class="form-label">Portofolio</label>
                                 <input type="file" class="form-control" id="inputPortofolio" required name="portofolio" accept=".pdf,.doc,.docx">
                             </div>
-                            <button type="submit" class="btn btn-primary" name="btn_simpan">Simpan</button>
+                            <button type="submit" class="btn btn-primary" name="simpan_pengajar">Simpan</button>
                             <button type="reset" class="btn btn-danger">Batal</button>
                         </form>
                     </div>

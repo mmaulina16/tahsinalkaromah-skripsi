@@ -41,18 +41,16 @@
     include "../../pengaturan/koneksi.php";
 
     // Ambil parameter GET dari URL
-    $filter_nma = isset($_POST['filter_nma']) ? $_POST['filter_nma'] : '';
-    $filter_bln = isset($_GET['filter_bln']) ? $_GET['filter_bln'] : '';
+    $filter_nama = isset($_GET['filter_nama']) ? $_GET['filter_nama'] : '';
+    $filter_bln = isset($_GET['filter_bln']) ? $_GET['filter_bln'] : '';    
 
     $query = "SELECT id_dhpengajar, nama_pengajar, tanggal, status_hadir FROM daftarhadir_pengajar WHERE 1=1";
 
-    if ($filter_nma != '') {
-        // Filter berdasarkan nama_pengajar
-        $query .= " AND nama_pengajar = '" . mysqli_real_escape_string($koneksi, $filter_nma) . "'";
+    if ($filter_nama != '') {
+        $query .= " AND nama_pengajar = '" . mysqli_real_escape_string($koneksi, $filter_nama) . "'";
     }
 
     if ($filter_bln != '') {
-        // Filter berdasarkan bulan pada tanggal
         $query .= " AND MONTH(tanggal) = '" . mysqli_real_escape_string($koneksi, $filter_bln) . "'";
     }
     ?>

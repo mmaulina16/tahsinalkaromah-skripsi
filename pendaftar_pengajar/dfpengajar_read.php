@@ -46,6 +46,7 @@
                         if ($search) {
                             $query .= " AND nama_pengajar LIKE '%" . mysqli_real_escape_string($koneksi, $search) . "%'";
                         }
+                        $query .= " ORDER BY FIELD(status_ajuan, 'diajukan', 'diverifikasi', 'ditolak')";
                         $data = mysqli_query($koneksi, $query);
 
                         while ($row = mysqli_fetch_array($data)) {

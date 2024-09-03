@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>Cetak Pendaftaran Pendaftar</title>
+    <title>Cetak Pendaftaran Pengajar</title>
     <link rel="shortcut icon" type="image/png" href="../assets/images/logos/tahsin&tahfidz-putih.png" />
     <style>
         .table {
@@ -55,7 +55,7 @@
         $query .= " AND kelas_tahsin = '" . mysqli_real_escape_string($koneksi, $filter_kls) . "'";
     }
     if ($filter_bln != '') {
-        $query .= " AND tanggal_pendaftaran = '" . mysqli_real_escape_string($koneksi, $filter_bln) . "'";
+        $query .= " AND MONTH(tanggal_pendaftaran) = '" . mysqli_real_escape_string($koneksi, $filter_bln) . "'";
     }
     ?>
 

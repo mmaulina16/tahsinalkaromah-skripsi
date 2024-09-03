@@ -185,16 +185,16 @@ $data = mysqli_fetch_array($query); // Mengambil data dari pengajar lalu ditampu
                     </select>
                 </div>
                 <div class="mb-3">
-                    <label for="inputFoto" class="form-label">Foto</label>
-                    <input type="file" class="form-control" id="inputFoto" name="foto" accept="image/*">
-                </div>
-                <div class="mb-3">
                     <label for="inputCV" class="form-label">CV</label>
                     <input type="file" class="form-control" id="inputCV" name="cv" accept=".pdf,.doc,.docx">
                 </div>
                 <div class="mb-3">
                     <label for="inputPortofolio" class="form-label">Portofolio</label>
                     <input type="file" class="form-control" id="inputPortofolio" name="portofolio" accept=".pdf,.doc,.docx">
+                </div>
+                <div class="mb-3">
+                    <label for="inputFoto" class="form-label">Foto</label>
+                    <input type="file" class="form-control" id="inputFoto" name="foto" accept="image/*">
                 </div>
                 <button type="submit" class="btn btn-primary" name="btn_simpan">Simpan</button>
                 <button type="reset" class="btn btn-danger">Batal</button>

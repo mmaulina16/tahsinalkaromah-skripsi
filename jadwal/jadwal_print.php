@@ -51,7 +51,7 @@
         $query .= " AND kelas_tahsin = '" . mysqli_real_escape_string($koneksi, $filter_kls) . "'";
     }
     if ($filter_bln != '') {
-        $query .= " AND waktu = '" . mysqli_real_escape_string($koneksi, $filter_bln) . "'";
+        $query .= " AND MONTH(waktu) = '" . mysqli_real_escape_string($koneksi, $filter_bln) . "'";
     }
     ?>
 
@@ -71,14 +71,14 @@
                 <h3 style="text-align:center;">LAPORAN JADWAL TAHSIN DAN TAHFIDZ</h3>
                 <hr>
 
-                <table class="table" align="center" border="1" style="text-align:center;">
+                <table class="table" align="center" border="1">
                     <tr>
-                        <th>No.</th>
-                        <th>Kelas</th>
-                        <th>Waktu</th>
-                        <th>Tempat</th>
-                        <th>Keterangan</th>
-                        </tr>
+                        <th style="width: 50px;">No.</th>
+                        <th style="width: 150px;">Kelas</th>
+                        <th style="width: 100px;">Waktu</th>
+                        <th style="width: 200px;">Tempat</th>
+                        <th style="width: 150px;">Keterangan</th>
+                    </tr>
                     <?php
                     $no = 1;
                     $sql = mysqli_query($koneksi, $query); // Eksekusi query dengan filter
@@ -88,9 +88,9 @@
                         if ($row > 0) {
                             while ($data = mysqli_fetch_array($sql)) {
                                 echo "<tr>";
-                                echo "<td>" . $no++ . "</td>";
+                                echo "<td style=text-align:center;>" . $no++ . "</td>";
                                 echo "<td>" . $data['kelas_tahsin'] . "</td>";
-                                echo "<td>" . $data['waktu'] . "</td>";
+                                echo "<td style=text-align:center;>" . $data['waktu'] . "</td>";
                                 echo "<td>" . $data['tempat'] . "</td>";
                                 echo "<td>" . $data['keterangan'] . "</td>";
                                 echo "</tr>";

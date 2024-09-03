@@ -47,9 +47,13 @@
                         $no = 1;
                         $search = isset($_GET['search']) ? $_GET['search'] : '';
                         $query = "SELECT * FROM anggota WHERE 1=1";
+
                         if ($search) {
                             $query .= " AND nama_anggota LIKE '%" . mysqli_real_escape_string($koneksi, $search) . "%'";
                         }
+
+                        // Tambahkan ORDER BY untuk mengurutkan hasil
+                        $query .= " ORDER BY FIELD(status_ajuan, 'diajukan', 'diverifikasi', 'ditolak')";
                         $data = mysqli_query($koneksi, $query);
                         while ($row = mysqli_fetch_array($data)) {
                         ?>

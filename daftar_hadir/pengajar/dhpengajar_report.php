@@ -31,7 +31,7 @@ $url_cetak = "daftar_hadir/pengajar/dhpengajar_print.php?filter_nama=" . urlenco
 					<div class="col-sm-6 col-md-4">
 						<div class="form-group">
 							<select name="filter_nama" id="filter_nama" class="form-control">
-								<option value="">Filter Nama Tahsin</option>
+								<option value="">Filter Nama Pengajar</option>
 								<?php
 								// Gunakan variabel lain untuk query dropdown nama
 								$nama_query = mysqli_query($koneksi, "SELECT * FROM pengajar WHERE status_ajuan='Diverifikasi'");
