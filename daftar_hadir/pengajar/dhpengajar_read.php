@@ -35,6 +35,7 @@
                     if ($search) {
                         $query .= " AND nama_pengajar LIKE '%" . mysqli_real_escape_string($koneksi, $search) . "%'";
                     }
+                    $query .= " ORDER BY tanggal DESC";
                     $data = mysqli_query($koneksi, $query);
                     while ($row = mysqli_fetch_array($data)) {
                     ?>

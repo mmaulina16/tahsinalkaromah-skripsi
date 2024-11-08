@@ -180,7 +180,7 @@
                   <span>
                     <i class="ti ti-message"></i>
                   </span>
-                  <span class="hide-menu">Umpan Balik</span>
+                  <span class="hide-menu">Tambah Umpan Balik</span>
                 </a>
               </li>
             <?php } ?>

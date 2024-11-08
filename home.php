@@ -98,10 +98,8 @@
                             <img src="assets/images/karimah.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Karimah</h5>
-                                <p class="card-text">Some quick input text to build on the card title and make up the bulk of
-                                    the
-                                    card's content.</p>
-                                <a href="#" class="btn btn-success">Daftar Sekarang</a>
+                                <p class="card-text">Karimah dengan Tema Meraih Kesuksesan Dunia dan Akhirat dengan Berpegang Teguh pada Al-Qur'an bersama Kak Arini Karima, S.Psi</p>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeGWJEgq4UH2G4lpOUJBXTuftFeOCOnKU8raaD3flL8TzTcuw/viewform" class="btn btn-success" target="_blank">Daftar Sekarang</a>
                             </div>
                         </div>
                     </div>
@@ -110,22 +108,18 @@
                             <img src="assets/images/habsyi.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Habsyi</h5>
-                                <p class="card-text">Some quick input text to build on the card title and make up the bulk of
-                                    the
-                                    card's content.</p>
-                                <a href="#" class="btn btn-success">Daftar Sekarang</a>
+                                <p class="card-text">Rutinan Maulid Habsyi Bersama Grup Nurussa'adah</p>
+                                <a href="https://wa.me/6289692783953" class="btn btn-success" target="_blank">Daftar Sekarang</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="assets/images/desaingrafis.jpg" class="card-img-top" alt="...">
+                            <img src="assets/images/isramiraj.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Pelatihan Desain Grafis</h5>
-                                <p class="card-text">Some quick input text to build on the card title and make up the bulk of
-                                    the
-                                    card's content.</p>
-                                <a href="#" class="btn btn-success">Daftar Sekarang</a>
+                                <h5 class="card-title">Peringatan Isra Mi'raj</h5>
+                                <p class="card-text">Peringatan Isra Mi'raj Sekaligus Haul Abah Guru Sekumpul. Qori Hasan Maulana dan Penceramah Tuan Guru H. Muhammad Fauzan</p>
+                                <a href="#" class="btn btn-success disabled" tabindex="-1" aria-disabled="true">Langsung Datang Ketempat</a>
                             </div>
                         </div>
                     </div>
