@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 16 Agu 2024 pada 10.55
+-- Waktu pembuatan: 08 Nov 2024 pada 06.56
 -- Versi server: 10.4.28-MariaDB
 -- Versi PHP: 8.0.28
 
@@ -58,14 +58,25 @@ CREATE TABLE `anggota` (
 
 INSERT INTO `anggota` (`id_anggota`, `npm`, `nama_anggota`, `jenis_kelamin`, `tanggal_lahir`, `no_telp`, `email`, `alamat`, `nama_wali`, `no_telp_wali`, `universitas`, `fakultas`, `prodi`, `batas_belajar`, `kemampuan`, `kelas_tahsin`, `alasan`, `foto`, `status_ajuan`, `tanggal_pendaftaran`, `editor`, `waktu_edit`) VALUES
 (25, 2110010730, 'Juairiatun Niswa', 'Perempuan', '2003-02-13', '082147483649', 'niswajuairiatun12@gmail.com', 'Jl. Sekumpul, Martapura', 'Fulan Abdullah', '08123456789', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Fakultas Ekonomi', 'Manajemen', 'Metode Tilawati Jilid 3', 'Lancar tapi belum bertajwid', 'Banjarbaru akhwat (setiap jum\'at)', 'Ingin memperbaiki bacaan Al-Qur\'an', 'user-1.jpg', 'Diverifikasi', '2024-08-12', '', '2024-08-12 13:38:09'),
-(26, 2010010754, 'Maya Maulina', 'Perempuan', '2002-05-16', '08115128607', 'mayamaulina16@gmail.com', 'Jl. Trikora, Komp. Griya Pesona Bhayangkara, Kel. Guntung Manggis, Kec. Landasan Ulin, Kota Banjarbaru.', 'Elly Sudiah', '08115128607', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Teknologi Informasi', 'Teknik Informatika', 'Metode Ummi Jilid 2', 'Lancar tapi belum bertajwid', 'Banjarbaru akhwat (setiap jum\'at)', 'Ingin memperbaiki bacaan Al-Qur\'an', 'Maya Maulina.jpg', 'Diverifikasi', '2024-08-12', '', '2024-08-12 13:43:16'),
-(27, 2010976779, 'Ara Narulyta', 'Perempuan', '2002-04-21', '081234567890', 'aranarulyta123@gmail.com', 'Jl. Dahlina Raya, Banjarbaruu', 'Fulanah', '082147483649', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Fakultas Keguruan dan Ilmu Pendidikan', 'Pendidikan Bahasa Inggris', 'Metode Tilawati Jilid 3', 'Lancar dan bertajwid', 'Banjarbaru akhwat (setiap jum\'at)', 'Ingin memperbaiki bacaan Al-Qur\'an', 'Maya Maulina (merah).png', 'Diverifikasi', '2024-08-12', '', '2024-08-12 13:45:50'),
-(28, 2010976770, 'Ara Narulyta', 'Perempuan', '2009-12-10', '081234567890', 'aranarulyta123@gmail.com', 'Jl. Dahlina Raya, Banjarbaruu', 'Fulanah', '082147483649', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Fakultas Keguruan dan Ilmu Pendidikan', 'Pendidikan Bahasa Inggris', 'Metode Tilawati Jilid 3', 'Lancar dan bertajwid', 'Banjarbaru akhwat (setiap jum\'at)', 'Ingin memperbaiki bacaan Al-Qur\'an', 'Maya Maulina (merah).png', 'Ditolak', '2024-08-13', '', '2024-08-12 23:18:34'),
-(30, 2101065473, 'Fitriyani', 'Perempuan', '2004-02-18', '082147483649', 'fitriyani123@gmai.com', 'Jl. Pramuka, Banjarmasin', 'Fulanah', '08115128607', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Fakultas Keguruan dan Ilmu Pendidikan', 'Pendidikan Bahasa Inggris', '', 'Lancar dan bertajwid', 'Banjarmasin akhwat (setiap sabtu)', 'Ingin memperbaiki bacaan Al-Qur\'an', 'user-1.jpg', 'Diverifikasi', '2024-08-13', 'adminmaya', '2024-08-13 15:35:34'),
-(31, 2310010543, 'Bintang', 'Laki-Laki', '2005-02-01', '08123456789', 'bintang123@gmail.com', 'Jl. Trikora, Banjarbaru', 'Muhammad Fulan', '082147483649', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Fakultas Keguruan dan Ilmu Pendidikan', 'Pendidikan Bahasa Inggris', '', 'Lancar dan bertajwid', 'Banjarbaru ikhwan (setiap sabtu)', 'Ingin memperbaiki bacaan Al-Qur\'an', 'user-1.jpg', 'Diverifikasi', '2024-08-13', 'adminmaya', '2024-08-13 15:41:33'),
-(32, 2310010542, 'Mirza Maulana', 'Laki-Laki', '2004-06-16', '08123456789', 'maulanamirza123@gmail.com', 'Jl. Pramuka, Banjarmasin', 'Muhammad Fulan', '082147483649', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Teknologi Informasi', 'Teknik Informatika', '', 'Lancar tapi belum bertajwid', 'Banjarmasin ikhwan (setiap malam kamis)', 'Ingin memperbaiki bacaan Al-Qur\'an', 'user-1.jpg', 'Diverifikasi', '2024-08-13', '', '2024-08-13 15:47:19'),
-(33, 0, '', 'Perempuan', '2002-04-10', '087453469889', 'aranarulyta123@gmail.com', 'Jl. Dahlina Raya, Banjarbaruu', '', '', '', '', '', '', '', 'Banjarbaru akhwat (setiap jum\'at)', '', 'user-1.jpg', 'Diajukan', '2024-08-16', '', '2024-08-16 02:14:08'),
-(34, 2010010543, 'Anisa Farikha Rahmah', 'Perempuan', '2002-06-04', '087453469890', 'anisafarikha123@gmail.com', 'Jl. Dahlina Raya, Banjarbaru', 'Fulanah', '08115128607', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Fakultas Keguruan dan Ilmu Pendidikan', 'Pendidikan Bahasa Inggriss', '', 'Lancar dan bertajwid', 'Banjarbaru akhwat (setiap jum\'at)', 'Ingin memperbaiki bacaan Al-Qur\'an', 'user-1.jpg', 'Diverifikasi', '2024-08-16', 'mmaulina', '2024-08-16 02:39:40');
+(26, 2010010754, 'Maya Maulina', 'Perempuan', '2002-05-16', '08115128607', 'mayamaulina16@gmail.com', 'Jl. Trikora, Banjarbaru.', 'Elly Sudiah', '08115128607', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Teknologi Informasi', 'Teknik Informatika', 'Metode Ummi Jilid 2', 'Lancar tapi belum bertajwid', 'Banjarbaru akhwat (setiap jum\'at)', 'Ingin memperbaiki bacaan Al-Qur\'an', 'Maya Maulina.jpg', 'Diverifikasi', '2024-08-12', '', '2024-08-12 13:43:16'),
+(27, 2010010562, 'Ara Narulyta', 'Perempuan', '2002-04-21', '081234567890', 'aranarulyta123@gmail.com', 'Jl. Dahlina Raya, Banjarbaruu', 'Fulanah', '082147483649', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Fakultas Keguruan dan Ilmu Pendidikan', 'Pendidikan Bahasa Inggris', 'Metode Tilawati Jilid 3', 'Lancar dan bertajwid', 'Banjarbaru akhwat (setiap jum\'at)', 'Ingin memperbaiki bacaan Al-Qur\'an', 'user-1.jpg', 'Diverifikasi', '2024-08-12', 'mmaulina16', '2024-08-12 13:45:50'),
+(30, 2201010061, 'Fitriyani', 'Perempuan', '2004-02-18', '082147483649', 'fitriyani123@gmai.com', 'Jl. Pramuka, Banjarmasin', 'Fulanah', '08115128607', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Fakultas Keguruan dan Ilmu Pendidikan', 'Pendidikan Bahasa Inggris', '', 'Lancar dan bertajwid', 'Banjarmasin akhwat (setiap sabtu)', 'Ingin memperbaiki bacaan Al-Qur\'an', 'user-1.jpg', 'Diverifikasi', '2024-08-13', 'mmaulina16', '2024-08-13 15:35:34'),
+(31, 2308010279, 'Sri Bintang', 'Laki-Laki', '2005-02-01', '08123456789', 'bintang123@gmail.com', 'Jl. Trikora, Banjarbaru', 'Muhammad Fulan', '082147483649', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Fakultas Keguruan dan Ilmu Pendidikan', 'Pendidikan Bahasa Inggris', '', 'Lancar dan bertajwid', 'Banjarbaru ikhwan (setiap sabtu)', 'Ingin memperbaiki bacaan Al-Qur\'an', 'user-1.jpg', 'Diverifikasi', '2024-08-13', 'mmaulina16', '2024-08-13 15:41:33'),
+(32, 2210010156, 'Mirza Maulana', 'Laki-Laki', '2004-06-16', '08123456789', 'maulanamirza123@gmail.com', 'Jl. Pramuka, Banjarmasin', 'Muhammad Fulan', '082147483649', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Teknologi Informasi', 'Teknik Informatika', '', 'Lancar tapi belum bertajwid', 'Banjarmasin ikhwan (setiap malam kamis)', 'Ingin memperbaiki bacaan Al-Qur\'an', 'user-1.jpg', 'Diverifikasi', '2024-08-13', 'mmaulina16', '2024-08-13 15:47:19'),
+(34, 2002010067, 'Anisa Farikha Rahmah', 'Perempuan', '2002-06-04', '087453469890', 'anisafarikha123@gmail.com', 'Jl. Dahlina Raya, Banjarbaru', 'Fulanah', '08115128607', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Fakultas Keguruan dan Ilmu Pendidikan', 'Pendidikan Bahasa Inggriss', '', 'Lancar dan bertajwid', 'Banjarbaru akhwat (setiap jum\'at)', 'Ingin memperbaiki bacaan Al-Qur\'an', 'user-1.jpg', 'Diverifikasi', '2024-08-16', 'mmaulina16', '2024-08-16 02:39:40'),
+(35, 2110010432, 'Utin Arpinna', 'Perempuan', '2003-02-12', '08745346988', 'utinarpina12@gmail.com', 'Jl. Pramuka, Banjarmasin', 'Muhammad Fulan', '085216789646', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Fakultas Kesehatan Masyarakat', 'Kesehatan Masyarakat', '', 'Lancar dan bertajwid', 'Banjarmasin akhwat (setiap sabtu)', 'Ingin memperbaiki bacaan Al-Qur\'an', 'user-1.jpg', 'Diverifikasi', '2024-08-30', 'mmaulina16', '2024-08-30 03:59:17'),
+(36, 2307010293, 'Nor Amalia Agustina', 'Perempuan', '2005-06-07', '082147483649', 'amaliaa123@gmail.com', 'Jl. Dahlina Raya, Banjarbaruu', 'Muhammad Fulan', '082147483649', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Fakultas Ekonomi', 'Ekonomi Syariah', '', 'Lancar tapi belum bertajwid', 'Banjarbaru akhwat (setiap jum\'at)', 'Ingin memperbaiki bacaan Al-Qur\'an', 'user-1.jpg', 'Diverifikasi', '2024-08-30', 'mmaulina16', '2024-08-30 04:45:40'),
+(37, 2307010292, 'Syifa Azkia', 'Laki-Laki', '2005-03-02', '08123456789', 'syifaazkia02@gmail.com', 'Jl. Pramuka, Banjarmasin', 'Fulan Abdullah', '082147483649', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Fakultas Ekonomi', 'Ekonomi Syariah', '', 'Lancar tapi belum bertajwid', 'Banjarbaru akhwat (setiap jum\'at)', 'Ingin memperbaiki bacaan Al-Qur\'an', 'user-1.jpg', 'Diverifikasi', '2024-08-30', 'mmaulina16', '2024-08-30 04:48:18'),
+(42, 2302010026, 'Nadiya Latifah', 'Perempuan', '2005-03-16', '08123456789', 'nadiyalatifah12@gmail.com', 'Jl. Dahlina Raya, Banjarbaru', 'Muhammad Fulan', '082147483649', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Fakultas Keguruan dan Ilmu Pendidikan', 'Pendidikan Bahasa Inggris', 'Metode Ummi Jilid 1', 'Lancar tapi belum bertajwid', 'Banjarbaru akhwat (setiap jum\'at)', 'Ingin memperbaiki bacaan Al-Qur\'an', 'user-1.jpg', 'Diverifikasi', '2024-09-04', '', '2024-09-04 01:58:33'),
+(43, 2105030068, 'Ikbal Maulana', 'Laki-Laki', '2003-07-09', '082147483649', 'ikbalmaulana09@gmail.com', 'Jl. Pramuka, Banjarmasin', 'Muhammad Fulan', '082147483649', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Fakultas Studi Islam', 'PGMI', 'Iqra\' Jilid 3', 'Lancar tapi belum bertajwid', 'Banjarmasin ikhwan (setiap malam kamis)', 'Ingin memperbaiki bacaan Al Quran', 'user-1.jpg', 'Diverifikasi', '2024-09-04', '', '2024-09-04 02:02:07'),
+(44, 2111010054, 'Elvina', 'Perempuan', '2003-02-12', '08123456789', 'elvinaaa12@gmail.com', 'Jl. Pramuka, Banjarmasin', 'Muhammad Fulan', '082147483649', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Fakultas Farmasi', 'Farmasi', 'Iqra\' Jilid 3', 'Lancar tapi belum bertajwid', 'Banjarmasin akhwat (setiap sabtu)', 'Ingin memperbaiki bacaan Al Quran', 'user-1.jpg', 'Diverifikasi', '2024-09-04', '', '2024-09-04 02:03:48'),
+(45, 2310010301, 'Muhammad Maulana', 'Laki-Laki', '2005-06-14', '082147483649', 'maulanamhmd14@gmail.com', 'Jl. Pramuka, Banjarmasin', 'Fulan Abdullah', '082147483649', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Teknologi Informasi', 'Teknik Informatika', 'Iqra\' Jilid 5', 'Lancar tapi belum bertajwid', 'Banjarmasin ikhwan (setiap malam kamis)', 'Ingin memperbaiki bacaan Al-Qur\'an', 'user-1.jpg', 'Diverifikasi', '2024-09-04', '', '2024-09-04 02:06:41'),
+(46, 2005030019, 'Lailatul Qadriyah', 'Perempuan', '2002-04-12', '08123456789', 'lailatulqadriyah12@gmail.com', 'Jl. Pramuka, Banjarmasin', 'Muhammad Fulan', '082147483649', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Fakultas Studi Islam', 'PGMI', 'Iqra\' Jilid 5', 'Lancar tapi belum bertajwid', 'Banjarmasin akhwat (setiap sabtu)', 'Ingin memperbaiki bacaan Al Quran', 'user-1.jpg', 'Diverifikasi', '2024-09-04', '', '2024-09-04 02:08:49'),
+(47, 2305030001, 'Hana Hafizhah', 'Perempuan', '2005-06-07', '082147483649', 'hanahafizhah07@gmail.com', 'Jl. Pramuka, Banjarmasin', 'Fulan Abdullah', '082147483649', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Fakultas Studi Islam', 'PGMI', 'Iqra\' Jilid 5', 'Lancar dan bertajwid', 'Banjarmasin akhwat (setiap sabtu)', 'Ingin memperbaiki bacaan Al Quran', 'user-1.jpg', 'Diverifikasi', '2024-09-04', '', '2024-09-04 02:17:45'),
+(48, 2110010470, 'Muhammad Amin', 'Laki-Laki', '2003-06-10', '08123456789', 'muhammadamin10@gmail.com', 'Jl. Pramuka, Banjarmasin', 'Fulan Abdullah', '082147483649', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Teknologi Informasi', 'Teknik Informatika', 'Iqra\' Jilid 2', 'Terbata-bata', 'Banjarmasin ikhwan (setiap malam kamis)', 'Ingin memperbaiki bacaan Al Quran', 'user-1.jpg', 'Diverifikasi', '2024-09-04', '', '2024-09-04 02:19:31'),
+(49, 2303010191, 'Muhammad Aulia Rahman', 'Perempuan', '2005-06-07', '082147483649', 'auliarahman07@gmail.com', 'Jl. Pramuka, Banjarmasin', 'Fulan Abdullah', '082147483649', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Fakultas Ekonomi', 'Manajemen', 'Iqra\' Jilid 5', 'Lancar tapi belum bertajwid', 'Banjarmasin ikhwan (setiap malam kamis)', 'Ingin memperbaiki bacaan Al-Qur\'an', 'user-1.jpg', 'Diverifikasi', '2024-09-04', '', '2024-09-04 02:26:09'),
+(50, 2305030045, 'Devina Windi Selvitasari', 'Perempuan', '2005-01-31', '082147483649', 'devinawindi31@gmail.com', 'Jl. Pramuka, Banjarmasin', 'Fulan Abdullah', '082147483649', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Fakultas Studi Islam', 'PGMI', 'Iqra\' Jilid 3', 'Lancar tapi belum bertajwid', 'Banjarmasin akhwat (setiap sabtu)', 'Ingin memperbaiki bacaan Al-Qur\'an', 'user-1.jpg', 'Diverifikasi', '2024-09-04', '', '2024-09-04 02:28:45'),
+(51, 2302020001, 'Desy Ratna Dewi', 'Perempuan', '2001-06-05', '08123456789', 'desyratnadewi05@gmail.com', 'Jl. Dahlina Raya, Banjarbaru', 'Muhammad Fulan', '082147483649', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Fakultas Keguruan dan Ilmu Pendidikan', 'Bimbingan dan Konseling', 'Iqra\' Jilid 3', 'Lancar tapi belum bertajwid', 'Banjarbaru akhwat (setiap jum\'at)', 'Ingin memperbaiki bacaan Al-Qur\'an', 'user-1.jpg', 'Diajukan', '2024-09-04', '', '2024-09-04 02:35:05');
 
 -- --------------------------------------------------------
 
@@ -6363,11 +6374,25 @@ CREATE TABLE `daftarhadir_anggota` (
 
 INSERT INTO `daftarhadir_anggota` (`id_dhanggota`, `npm`, `nama_anggota`, `tanggal`, `status_hadir`, `creator`, `created_at`, `editor`, `updated_at`) VALUES
 (4, 2110010730, 'Juairiatun Niswa', '2024-08-16', 'Hadir', 'mmaulina', '2024-08-15 13:05:43', 'mmaulina', '2024-08-15 14:58:15'),
-(5, 2010976779, 'Ara Narulyta', '2024-08-16', 'Hadir', 'mmaulina', '2024-08-15 13:28:24', 'mmaulina', '2024-08-15 14:58:28'),
-(6, 2101065473, 'Fitriyani', '2024-08-17', 'Hadir', 'mmaulina', '2024-08-15 13:28:45', 'mmaulina', '2024-08-15 14:58:50'),
+(5, 2010010562, 'Ara Narulyta', '2024-08-16', 'Izin', 'mmaulina', '2024-08-15 13:28:24', 'febri123', '2024-09-03 18:19:57'),
 (7, 2310010542, 'Mirza Maulana', '2024-08-14', 'Hadir', 'mmaulina', '2024-08-15 13:29:02', 'mmaulina', '2024-08-15 14:58:59'),
-(8, 2310010543, 'Bintang', '2024-08-17', 'Hadir', 'mmaulina', '2024-08-15 22:59:26', '', '2024-08-15 14:59:26'),
-(9, 2010010754, 'Maya Maulina', '2024-08-16', 'Izin', 'mmaulina', '2024-08-16 10:22:41', '', '2024-08-16 02:22:41');
+(10, 2010010754, 'Maya Maulina', '2024-08-16', 'Izin', 'mmaulina16', '2024-08-30 14:07:14', '', '2024-08-30 06:07:14'),
+(11, 2010010543, 'Anisa Farikha Rahmah', '2024-08-16', 'Izin', 'mmaulina16', '2024-08-30 14:07:34', 'febri123', '2024-09-03 18:20:05'),
+(12, 2110010432, 'Utin Arpinna', '2024-08-17', 'Hadir', 'mmaulina16', '2024-08-30 14:08:43', 'mmaulina16', '2024-09-04 02:56:42'),
+(13, 2010010754, 'Maya Maulina', '2024-08-23', 'Hadir', 'mmaulina16', '2024-08-30 14:09:03', '', '2024-08-30 06:09:03'),
+(14, 2010010754, 'Maya Maulina', '2024-08-30', 'Sakit', 'mmaulina16', '2024-08-30 14:09:24', 'mmaulina16', '2024-08-30 06:10:17'),
+(15, 2010010562, 'Ara Narulyta', '2024-08-23', 'Hadir', 'mmaulina16', '2024-08-30 14:09:43', '', '2024-08-30 06:09:43'),
+(16, 2010010562, 'Ara Narulyta', '2024-08-30', 'Hadir', 'mmaulina16', '2024-08-30 14:10:06', 'mmaulina16', '2024-08-30 11:43:57'),
+(17, 2010010543, 'Anisa Farikha Rahmah', '2024-08-23', 'Hadir', 'mmaulina16', '2024-08-30 14:10:42', '', '2024-08-30 06:10:42'),
+(18, 2010010543, 'Anisa Farikha Rahmah', '2024-08-30', 'Hadir', 'mmaulina16', '2024-08-30 14:10:54', '', '2024-08-30 06:10:54'),
+(19, 2110010730, 'Juairiatun Niswa', '2024-08-23', 'Hadir', 'mmaulina16', '2024-08-30 14:11:16', '', '2024-08-30 06:11:16'),
+(20, 2110010730, 'Juairiatun Niswa', '2024-08-30', 'Hadir', 'mmaulina16', '2024-08-30 14:11:34', '', '2024-08-30 06:11:34'),
+(21, 2110010432, 'Utin Arpinna', '2024-08-24', 'Hadir', 'mmaulina16', '2024-08-30 14:12:07', 'mmaulina16', '2024-09-04 02:57:01'),
+(22, 2110010432, 'Utin Arpinna', '2024-08-28', 'Izin', 'mmaulina16', '2024-08-30 14:12:38', 'mmaulina16', '2024-09-04 02:57:18'),
+(24, 2307010293, 'Nor Amalia Agustina', '2024-08-23', 'Hadir', 'mmaulina16', '2024-08-30 19:38:28', 'mmaulina16', '2024-09-04 02:55:56'),
+(26, 2210010156, 'Mirza Maulana', '2024-08-21', 'Hadir', 'mmaulina16', '2024-09-04 10:53:33', '', '2024-09-04 02:53:33'),
+(27, 2210010156, 'Mirza Maulana', '2024-08-31', 'Hadir', 'mmaulina16', '2024-09-04 10:54:28', '', '2024-09-04 02:54:28'),
+(28, 2307010293, 'Nor Amalia Agustina', '2024-08-23', 'Hadir', 'mmaulina16', '2024-09-04 10:55:33', '', '2024-09-04 02:55:33');
 
 -- --------------------------------------------------------
 
@@ -6391,9 +6416,18 @@ CREATE TABLE `daftarhadir_pengajar` (
 --
 
 INSERT INTO `daftarhadir_pengajar` (`id_dhpengajar`, `nama_pengajar`, `tanggal`, `status_hadir`, `creator`, `created_at`, `editor`, `updated_at`) VALUES
-(4, 'Alamudin Haqi', '2024-08-17', 'Izin', 'mmaulina', '2024-08-15 15:03:48', 'mmaulina', '2024-08-15 11:25:09'),
-(5, 'Devi Ariasandi Puteri', '2024-08-17', 'Hadir', 'mmaulina', '2024-08-15 15:03:59', 'mmaulina', '2024-08-15 11:24:46'),
-(6, 'Febriyanti', '2024-08-17', 'Hadir', 'mmaulina', '2024-08-15 15:04:13', 'mmaulina', '2024-08-15 11:25:01');
+(5, 'Devi Ariasandi Puteri', '2024-08-16', 'Hadir', 'mmaulina', '2024-08-15 15:03:59', 'mmaulina16', '2024-09-04 02:46:52'),
+(6, 'Febriyanti', '2024-08-17', 'Hadir', 'mmaulina', '2024-08-15 15:04:13', 'mmaulina', '2024-08-15 11:25:01'),
+(8, 'Alamudin Haqi', '2024-08-21', 'Hadir', 'mmaulina16', '2024-08-30 14:19:39', '', '2024-08-30 06:19:39'),
+(9, 'Alamudin Haqi', '2024-08-31', 'Hadir', 'mmaulina16', '2024-08-30 14:19:57', '', '2024-08-30 06:19:57'),
+(13, 'Febriyanti', '2024-08-28', 'Hadir', 'mmaulina16', '2024-08-30 14:22:07', '', '2024-08-30 06:22:07'),
+(16, 'Siti Shofaa', '2024-08-17', 'Hadir', 'mmaulina16', '2024-09-04 10:44:07', '', '2024-09-04 02:44:07'),
+(17, 'Siti Shofaa', '2024-08-24', 'Hadir', 'mmaulina16', '2024-09-04 10:44:26', '', '2024-09-04 02:44:26'),
+(18, 'Siti Shofaa', '2024-08-28', 'Hadir', 'mmaulina16', '2024-09-04 10:44:45', '', '2024-09-04 02:44:45'),
+(19, 'Febriyanti', '2024-08-24', 'Hadir', 'mmaulina16', '2024-09-04 10:46:17', '', '2024-09-04 02:46:17'),
+(20, 'Alamudin Haqi', '2024-08-14', 'Hadir', 'mmaulina16', '2024-09-04 10:47:29', '', '2024-09-04 02:47:29'),
+(21, 'Devi Ariasandi Puteri', '2024-08-30', 'Hadir', 'mmaulina16', '2024-09-04 10:48:03', '', '2024-09-04 02:48:03'),
+(22, 'Devi Ariasandi Puteri', '2024-08-23', 'Hadir', 'mmaulina16', '2024-09-04 10:49:31', '', '2024-09-04 02:49:31');
 
 -- --------------------------------------------------------
 
@@ -6561,7 +6595,11 @@ INSERT INTO `halaqoh_tahfidz` (`id_tahfidz`, `nama_pengajar`, `nama_anggota`, `n
 (6, 'Devi Ariasandi Puteri', 'Maya Maulina', 2010010754, 'Banjarbaru akhwat (setiap jum\'at)', '2024-08-16 12:40:00', 'Al - Fatihah', 'pelafalannya sudah bagus', 'Lebih lancar lagi aja, jangan ragu-ragu', 'adminmaya', '2024-08-14 19:23:10', 'mmaulina', '2024-08-15 14:44:08'),
 (7, 'Devi Ariasandi Puteri', 'Ara Narulyta', 2010976779, 'Banjarbaru akhwat (setiap jum\'at)', '2024-08-16 12:40:00', 'Al - Fatihah', 'pelafalannya sudah bagus', 'nadanya disesuaikan lagi dengan nada metode ummi', 'adminmaya', '2024-08-14 19:31:49', 'mmaulina', '2024-08-15 14:43:31'),
 (8, 'Febriyanti', 'Fitriyani', 2101065473, 'Banjarmasin akhwat (setiap sabtu)', '2024-08-17 10:00:00', 'Al - Kahfi', 'tajwid sudah baik', 'Lebih lancar lagi aja, jangan ragu-ragu', 'adminmaya', '2024-08-14 19:32:17', 'mmaulina', '2024-08-15 14:42:55'),
-(9, 'Alamudin Haqi', 'Mirza Maulana', 2310010542, 'Banjarmasin ikhwan (setiap malam kamis)', '2024-08-14 19:10:00', 'Al - Kahfi', 'tajwid sudah baik', 'Lebih lancar lagi aja, jangan ragu-ragu', 'adminmaya', '2024-08-14 19:33:04', 'mmaulina', '2024-08-15 14:42:10');
+(9, 'Alamudin Haqi', 'Mirza Maulana', 2310010542, 'Banjarmasin ikhwan (setiap malam kamis)', '2024-08-14 19:10:00', 'Al - Kahfi', 'tajwid sudah baik', 'Lebih lancar lagi aja, jangan ragu-ragu', 'adminmaya', '2024-08-14 19:33:04', 'mmaulina', '2024-08-15 14:42:10'),
+(14, 'Devi Ariasandi Puteri', 'Anisa Farikha Rahmah', 2010010543, 'Banjarbaru akhwat (setiap jum\'at)', '2024-08-16 12:40:00', 'Al - Fatihah', 'pelafalannya sudah bagus', 'nadanya disesuaikan lagi dengan nada metode ummi', 'mmaulina16', '2024-08-30 16:34:45', '', '2024-08-30 08:34:45'),
+(15, 'Devi Ariasandi Puteri', 'Juairiatun Niswa', 2110010730, 'Banjarbaru akhwat (setiap jum\'at)', '2024-08-16 12:40:00', 'Al - Fatihah', 'nadanya sudah sesuai', 'Lebih lancar lagi aja, jangan ragu-ragu', 'mmaulina16', '2024-08-30 16:35:48', '', '2024-08-30 08:35:48'),
+(16, 'Devi Ariasandi Puteri', 'Maya Maulina', 2010010754, 'Banjarbaru akhwat (setiap jum\'at)', '2024-08-23 12:00:00', 'Al - Ikhlas', 'nadanya sudah sesuai', 'Lebih lancar lagi aja, jangan ragu-ragu', 'mmaulina16', '2024-08-30 20:21:18', '', '2024-08-30 12:21:18'),
+(18, 'Devi Ariasandi Puteri', 'Maya Maulina', 2010010754, 'Banjarbaru akhwat (setiap jum\'at)', '2024-09-06 12:00:00', 'Al - Ikhlas', 'tajwid sudah baik', 'nadanya disesuaikan lagi dengan nada metode ummi', 'mmaulina16', '2024-09-02 22:56:55', '', '2024-09-02 14:56:55');
 
 -- --------------------------------------------------------
 
@@ -6577,8 +6615,8 @@ CREATE TABLE `halaqoh_tahsin` (
   `kelas` varchar(50) NOT NULL,
   `jadwal_tahsin` datetime NOT NULL,
   `batas_tahsin` varchar(50) NOT NULL,
-  `kemajuan` varchar(250) NOT NULL,
-  `perbaikan_bacaan` varchar(250) NOT NULL,
+  `kemajuan` varchar(200) NOT NULL,
+  `perbaikan_bacaan` varchar(200) NOT NULL,
   `creator` varchar(50) NOT NULL,
   `created_at` datetime NOT NULL DEFAULT current_timestamp(),
   `editor` varchar(50) NOT NULL,
@@ -6594,7 +6632,17 @@ INSERT INTO `halaqoh_tahsin` (`id_tahsin`, `nama_pengajar`, `nama_anggota`, `npm
 (10, 'Devi Ariasandi Puteri', 'Juairiatun Niswa', 2110010730, 'Banjarbaru akhwat (setiap jum\'at)', '2024-08-16 12:40:00', 'Metode Ummi Jilid 2, hal.3', 'nadanya sudah sesuai', 'tajwidnya lebih diperhatikan lagi', 'adminmaya', '2024-08-14 20:34:20', 'mmaulina', '2024-08-15 06:23:19'),
 (11, 'Febriyanti', 'Fitriyani', 2101065473, 'Banjarmasin akhwat (setiap sabtu)', '2024-08-17 10:00:00', 'Ad-Dhuha', 'pelafalannya sudah bagus', 'lebih lantang lagi membacanya, jgn ragu-ragu', 'adminmaya', '2024-08-14 20:35:40', 'mmaulina', '2024-08-15 06:25:31'),
 (12, 'Alamudin Haqi', 'Mirza Maulana', 2310010542, 'Banjarmasin ikhwan (setiap malam kamis)', '2024-08-14 19:10:00', 'Ad-Dhuha', 'pelafalannya sudah bagus', 'lebih lantang lagi membacanya, jgn ragu-ragu', 'adminmaya', '2024-08-14 20:36:22', 'mmaulina', '2024-08-15 06:25:46'),
-(13, 'Alamudin Haqi', 'Bintang', 2310010543, 'Banjarbaru ikhwan (setiap sabtu)', '2024-08-17 08:00:00', 'Ad-Dhuha', 'pelafalannya sudah bagus', 'lebih lantang lagi membacanya, jgn ragu-ragu', 'mmaulina', '2024-08-15 14:19:30', '', '2024-08-15 06:19:30');
+(17, 'Devi Ariasandi Puteri', 'Maya Maulina', 2010010754, 'Banjarbaru akhwat (setiap jum\'at)', '2024-08-23 12:00:00', 'Metode Ummi Jilid 2, hal.4', 'nadanya sudah sesuai', 'huruf dhonya lebih tebal lagi', 'mmaulina16', '2024-08-30 16:19:03', '', '2024-08-30 08:19:03'),
+(18, 'Devi Ariasandi Puteri', 'Maya Maulina', 2010010754, 'Banjarbaru akhwat (setiap jum\'at)', '2024-08-30 12:00:00', 'Metode Ummi Jilid 2, hal.6', 'nadanya sudah sesuai', 'huruf thonya lebih tebal lagi', 'mmaulina16', '2024-08-30 16:20:18', '', '2024-08-30 08:20:18'),
+(19, 'Devi Ariasandi Puteri', 'Ara Narulyta', 2010010562, 'Banjarbaru akhwat (setiap jum\'at)', '2024-08-16 12:40:00', 'Metide Ummi Jilid 1, hal.2', 'pelafalannya sudah bagus', 'nadanya disesuaikan lagi dengan metode ummi', 'mmaulina16', '2024-08-30 16:21:24', '', '2024-08-30 08:21:24'),
+(20, 'Devi Ariasandi Puteri', 'Ara Narulyta', 2010010562, 'Banjarbaru akhwat (setiap jum\'at)', '2024-08-23 12:00:00', 'Metode Ummi Jilid 1,  hal.4', 'pelafalannya sudah bagus', 'nadanya disesuaikan lagi dengan metode ummi', 'mmaulina16', '2024-08-30 16:22:21', '', '2024-08-30 08:22:21'),
+(21, 'Devi Ariasandi Puteri', 'Ara Narulyta', 2010010562, 'Banjarbaru akhwat (setiap jum\'at)', '2024-08-30 12:00:00', 'Metode Ummi Jilid 1,  hal. 6', 'pelafalannya sudah bagus', 'nadanya disesuaikan lagi dengan metode ummi', 'mmaulina16', '2024-08-30 16:22:56', '', '2024-08-30 08:22:56'),
+(24, 'Alamudin Haqi', 'Muhammad Maulana', 2310010301, 'Banjarmasin ikhwan (setiap malam kamis)', '2024-09-04 19:10:00', 'Al-Fatihah', 'tajwid sudah baik', 'lebih lantang lagi membacanya, jgn ragu-ragu', 'mmaulina16', '2024-09-04 11:00:40', '', '2024-09-04 03:00:40'),
+(25, 'Alamudin Haqi', 'Ikbal Maulana', 2105030068, 'Banjarmasin ikhwan (setiap malam kamis)', '2024-09-04 19:10:00', 'Al-Fatihah', 'tajwid sudah baik', 'lebih lantang lagi membacanya, jgn ragu-ragu', 'mmaulina16', '2024-09-04 11:01:29', '', '2024-09-04 03:01:29'),
+(26, 'Alamudin Haqi', 'Mirza Maulana', 2210010156, 'Banjarmasin ikhwan (setiap malam kamis)', '2024-09-04 19:10:00', 'Al-Fatihah', 'pelafalannya sudah bagus', 'lebih lantang lagi membacanya, jgn ragu-ragu', 'mmaulina16', '2024-09-04 11:02:18', '', '2024-09-04 03:02:18'),
+(27, 'Alamudin Haqi', 'Muhammad Amin', 2110010470, 'Banjarmasin ikhwan (setiap malam kamis)', '2024-09-04 19:10:00', 'Al-Fatihah', 'tajwid sudah baik', 'Lebih lancar lagi', 'mmaulina16', '2024-09-04 11:03:16', '', '2024-09-04 03:03:16'),
+(28, 'Alamudin Haqi', 'Muhammad Aulia Rahman', 2303010191, 'Banjarmasin ikhwan (setiap malam kamis)', '2024-09-04 19:10:00', 'Al-Fatihah', 'tajwid sudah baik', 'Lebih lancar lagi', 'mmaulina16', '2024-09-04 11:03:48', '', '2024-09-04 03:03:48'),
+(29, 'Febriyanti', 'Maya Maulina', 2010010754, 'Banjarmasin akhwat (setiap sabtu)', '2024-09-07 10:00:00', 'Jilid 2, hal.3', 'tajwid sudah baik', 'nadanya disesuaikan lagi dengan metode ummi', 'febri123', '2024-09-04 12:39:52', '', '2024-09-04 04:39:52');
 
 -- --------------------------------------------------------
 
@@ -12899,9 +12947,23 @@ CREATE TABLE `jadwal` (
 
 INSERT INTO `jadwal` (`id_jadwal`, `nama_pengajar`, `nama_anggota`, `kelas_tahsin`, `waktu`, `tempat`, `keterangan`) VALUES
 (7, '', '', 'Banjarbaru akhwat (setiap jum\'at)', '2024-08-16 12:40:00', 'Di musholla akhwat kampus bjb', 'Bawa botol minum'),
-(8, '', '', 'Banjarbaru ikhwan (setiap sabtu)', '2024-08-17 08:00:00', 'Di musholla ikhwan kampus bjb', '-'),
+(8, '', '', 'Banjarbaru ikhwan (setiap sabtu)', '2024-08-17 08:00:00', 'Di musholla ikhwan kampus bjb', 'Bawa botol minum'),
 (9, '', '', 'Banjarmasin akhwat (setiap sabtu)', '2024-08-17 10:00:00', 'Di masjid sabilal muhtadin banjarmasin', '5 menit sebelum waktunya sudah di tempat'),
-(10, '', '', 'Banjarmasin ikhwan (setiap malam kamis)', '2024-08-14 19:10:00', 'Di masjid bagian ikhwan kampus bjm', 'Bawa peci dan sarung untuk sholat berjama\'ah');
+(10, '', '', 'Banjarmasin ikhwan (setiap malam kamis)', '2024-08-14 19:10:00', 'Di masjid bagian ikhwan kampus bjm', 'Bawa peci dan sarung untuk sholat berjama\'ah'),
+(12, '', '', 'Banjarbaru akhwat (setiap jum\'at)', '2024-08-23 12:00:00', 'Di musholla akhwat kampus bjb', 'Bawa botol minum'),
+(13, '', '', 'Banjarbaru ikhwan (setiap sabtu)', '2024-08-24 08:00:00', 'Di musholla ikhwan kampus bjb', 'Bawa botol minum'),
+(14, '', '', 'Banjarmasin akhwat (setiap sabtu)', '2024-08-24 09:00:00', 'Di masjid sabilal muhtadin banjarmasin', '5 menit sebelum waktunya sudah di tempat'),
+(15, '', '', 'Banjarmasin ikhwan (setiap malam kamis)', '2024-08-21 19:20:00', 'Di masjid bagian ikhwan kampus bjm', 'Bawa peci dan sarung'),
+(16, '', '', 'Banjarbaru akhwat (setiap jum\'at)', '2024-08-30 12:00:00', 'Di musholla akhwat kampus bjb', 'Bawa botol minum'),
+(17, '', '', 'Banjarbaru ikhwan (setiap sabtu)', '2024-08-31 08:00:00', 'Di musholla ikhwan kampus bjb', '-'),
+(18, '', '', 'Banjarmasin ikhwan (setiap malam kamis)', '2024-08-28 19:20:00', 'Di masjid bagian ikhwan kampus bjm', 'Bawa peci dan sarung'),
+(19, '', '', 'Banjarmasin akhwat (setiap sabtu)', '2024-08-31 09:00:00', 'Di masjid sabilal muhtadin banjarmasin', '5 menit sebelum waktunya sudah di tempat'),
+(22, '', '', 'Banjarbaru akhwat (setiap jum\'at)', '2024-09-06 12:00:00', 'Di musholla akhwat kampus bjb', 'Bawa botol minum'),
+(23, '', '', 'Banjarbaru ikhwan (setiap sabtu)', '2024-09-07 08:00:00', 'Di musholla ikhwan kampus bjb', 'persiapkan modul sesuai batas tahsin masing-masing'),
+(24, '', '', 'Banjarmasin akhwat (setiap sabtu)', '2024-09-07 10:00:00', 'Di masjid bagian akhwat kampus bjm', 'bawa Al-Qur\'an masing-masing'),
+(25, '', '', 'Banjarmasin ikhwan (setiap malam kamis)', '2024-09-04 19:10:00', 'Di masjid bagian ikhwan kampus bjm', 'Bawa peci dan sarung'),
+(26, '', '', 'Banjarbaru akhwat (setiap jum\'at)', '2024-10-11 08:00:00', 'Di musholla akhwat kampus bjb', 'Bawa botol minum'),
+(27, '', '', 'Banjarmasin ikhwan (setiap malam kamis)', '2024-10-02 19:10:00', 'Di masjid bagian ikhwan kampus bjm', 'Bawa peci dan sarung');
 
 -- --------------------------------------------------------
 
@@ -12923,6 +12985,31 @@ INSERT INTO `kelas` (`id_kelas`, `nama_kelas`) VALUES
 (2, 'Banjarbaru ikhwan (setiap sabtu)'),
 (3, 'Banjarmasin akhwat (setiap sabtu)'),
 (4, 'Banjarmasin ikhwan (setiap malam kamis)');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `nilai_mhs`
+--
+
+CREATE TABLE `nilai_mhs` (
+  `id_nilai` int(11) NOT NULL,
+  `npm` bigint(10) NOT NULL,
+  `nama` varchar(200) NOT NULL,
+  `jurusan` varchar(200) NOT NULL,
+  `mata_kuliah` varchar(150) NOT NULL,
+  `dosen` varchar(200) NOT NULL,
+  `nilai` varchar(5) NOT NULL,
+  `sks` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `nilai_mhs`
+--
+
+INSERT INTO `nilai_mhs` (`id_nilai`, `npm`, `nama`, `jurusan`, `mata_kuliah`, `dosen`, `nilai`, `sks`) VALUES
+(1, 2010010754, 'Maya Maulina', 'Teknik Informatika', 'Jaringan Syaraf Tiruan', 'Arafat, M.Kom', '80', 3),
+(2, 2010010757, 'Ara Narulyta', 'Teknik Informatika', 'Manajemen Perangkat Lunak', 'Arafat, M.Kom', '75', 2);
 
 -- --------------------------------------------------------
 
@@ -12957,10 +13044,8 @@ CREATE TABLE `pengajar` (
 
 INSERT INTO `pengajar` (`id_pengajar`, `nama_pengajar`, `jenis_kelamin`, `tanggal_lahir`, `alamat`, `no_telp`, `email`, `lulusan`, `jurusan`, `hafalan`, `kelas_tahsin`, `cv`, `portofolio`, `foto`, `status_ajuan`, `tanggal_pendaftaran`, `editor`, `waktu_edit`) VALUES
 (3, 'Devi Ariasandi Puteri', 'Perempuan', '2000-10-17', 'Jl. Dahlina Raya, Banjarbaru', '0852736715658', 'deviariasandip123@gmail.com', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Agribisnis', 'Juz 1 - 30', 'Banjarbaru akhwat (setiap jum\'at)', 'CV - Maya Maulina (Creative).pdf', 'Portofolio Kreatif - 2024.pdf', 'user-1.jpg', 'Diverifikasi', '2024-08-12', '', '2024-08-12 15:40:55'),
-(4, 'Febriyanti', 'Perempuan', '2002-02-12', 'Jl. Pramuka, Banjarmasin', '087453469890', 'febriyanti02@gmail.com', 'Universitas Islam Kalimantan MAB  Banjarmasin', 'Ilmu Hukum', 'Juz 1 - 10', 'Banjarmasin akhwat (setiap sabtu)', 'CV - Maya Maulina (Design).pdf', 'Portofolio Kreatif - 2024.pdf', 'user-1.jpg', 'Diverifikasi', '2024-08-12', 'adminmaya', '2024-08-12 15:48:02'),
-(5, 'Maya Maulina', 'Perempuan', '2002-07-31', 'Jl. Trikora, Komp. Griya Pesona Bhayangkara, Kel. Guntung Manggis, Kec. Landasan Ulin, Kota Banjarbaru.', '08115128607', 'mayamaulina16@gmail.com', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Ilmu Hukum', 'Juz 1 - 15', 'Banjarbaru akhwat (setiap jum\'at)', 'Foto 3 x 2.docx', 'Assessment.pdf', 'Maya Maulina (merah).png', 'Ditolak', '2024-08-13', '', '2024-08-13 00:09:05'),
+(4, 'Febriyanti', 'Perempuan', '2002-02-12', 'Jl. Pramuka, Banjarmasin', '087453469890', 'febriyanti02@gmail.com', 'Universitas Islam Kalimantan MAB  Banjarmasin', 'Ilmu Hukum', 'Juz 1 - 10', 'Banjarmasin akhwat (setiap sabtu)', 'CV - Maya Maulina (Design).pdf', 'Portofolio Kreatif - 2024.pdf', 'user-1.jpg', 'Diverifikasi', '2024-08-12', 'mmaulina16', '2024-08-12 15:48:02'),
 (6, 'Alamudin Haqi', 'Laki-Laki', '2002-03-19', 'Jl. Pramuka, Banjarmasin', '087453469889', 'alamudin123@gmail.com', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Ilmu Hukum', 'Juz 1 - 15', 'Banjarmasin ikhwan (setiap malam kamis)', 'CV - Maya Maulina (Creative).pdf', 'CV - Maya Maulina (Creative).pdf', 'user-1.jpg', 'Diverifikasi', '2024-08-14', '', '2024-08-14 06:35:37'),
-(7, 'Ara Narulytaaa', 'Perempuan', '2002-04-10', 'Jl. Dahlina Raya, Banjarbaruu', '087453469889', 'aranarulyta123@gmail.com', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Pendidikan Bahasa Inggris', 'Juz 1 - 15', 'Banjarbaru akhwat (setiap jum\'at)', 'CV - Maya Maulina (Design).pdf', 'CV - Maya Maulina (Sosmed).pdf', 'user-1.jpg', 'Diajukan', '2024-08-16', '', '2024-08-16 02:14:08'),
 (8, 'Siti Shofaa', 'Perempuan', '2003-07-23', 'Jl. Pramuka, Banjarmasin', '087453469889', 'shofaaa123@gmai.com', 'Universitas Islam Kalimantan MAB Banjarmasin', 'Pendidikan Bahasa Inggris', 'Juz 1 - 15', 'Banjarmasin akhwat (setiap sabtu)', 'CV - Maya Maulina (Design).pdf', 'CV - Maya Maulina (Creative).pdf', 'user-1.jpg', 'Diverifikasi', '2024-08-16', 'mmaulina', '2024-08-16 02:44:21');
 
 -- --------------------------------------------------------
@@ -12985,12 +13070,15 @@ CREATE TABLE `pengguna` (
 --
 
 INSERT INTO `pengguna` (`id_user`, `nama`, `username`, `email`, `password`, `jenis_kelamin`, `status`, `status_akun`) VALUES
-(1, 'Maya Maulina', 'mmaulina16', 'mayamaulina05@gmail.com', 'f4a637ba636f4a3b258273c5605d4266', 'Perempuan', 'Admin', 'Diverifikasi'),
+(1, 'Maya Maulina', 'adminmaya', 'mayamaulina05@gmail.com', 'f4a637ba636f4a3b258273c5605d4266', 'Perempuan', 'Admin', 'Diverifikasi'),
 (5, 'Maya Maulina', '2010010754', 'mayamaulina16@gmail.com', 'f4a637ba636f4a3b258273c5605d4266', 'Perempuan', 'Anggota', 'Diverifikasi'),
 (7, 'Febriyanti', 'febri123', 'febriyanti02@gmail.com', '296aadbf4ebe1379615e81800dab7777', 'Perempuan', 'Pengajar', 'Diverifikasi'),
-(11, 'Ara Narulyta', '2010976779', 'aranarulyta123@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99', 'Perempuan', 'Anggota', 'Diverifikasi'),
+(11, 'Ara Narulyta', '2010010562', 'aranarulyta123@gmail.com', 'b26dac0d3e2928565b690897f0b4a8c9', 'Perempuan', 'Anggota', 'Diverifikasi'),
 (12, 'Juairiatun Niswa', '2110010730', 'niswajuairiatun12@gmail.com', '48d08067bcb4c16c447e125b6c4a3adb', 'Perempuan', 'Anggota', 'Diverifikasi'),
-(13, 'Anisa Farikha Rahmah', 'anisafarikha12', 'anisafarikha123@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99', 'Perempuan', 'Anggota', 'Diajukan');
+(13, 'Anisa Farikha Rahmah', '2010010543', 'anisafarikha123@gmail.com', '301b96488b077ba8f9a4a01db8dab2db', 'Perempuan', 'Anggota', 'Diverifikasi'),
+(14, 'Fitriyani', '2101065473', 'fitriyani123@gmai.com', '866c79485e52c27aec9556129b274a27', 'Perempuan', 'Anggota', 'Diverifikasi'),
+(15, 'Mirza Maulana', '2310010542', 'maulanamirza123@gmail.com', 'c6c4cabe9fa81bb02e3825151703288b', 'Laki-Laki', 'Anggota', 'Diverifikasi'),
+(17, 'Admin', 'admin', 'admintahsin123@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99', 'Laki-Laki', 'Admin', 'Diverifikasi');
 
 -- --------------------------------------------------------
 
@@ -13004,7 +13092,7 @@ CREATE TABLE `umpan_balik` (
   `rating` int(5) NOT NULL,
   `alasan_rating` varchar(200) NOT NULL,
   `saran` varchar(250) NOT NULL,
-  `responden` varchar(20) NOT NULL
+  `responden` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -13012,12 +13100,13 @@ CREATE TABLE `umpan_balik` (
 --
 
 INSERT INTO `umpan_balik` (`id_umpanbalik`, `kelas`, `rating`, `alasan_rating`, `saran`, `responden`) VALUES
-(4, 'Banjarbaru akhwat (setiap jum\'at)', 5, 'Mudah dipahami dan mudah dipraktekkan', 'Tidak ada', 'adminmaya'),
-(5, 'Banjarbaru akhwat (setiap jum\'at)', 5, 'Mudah dipahami dan mudah dipraktekkan', 'Tidak ada', 'mmaulina'),
-(6, 'Banjarbaru akhwat (setiap jum\'at)', 4, 'Mudah dipahami dan mudah dipraktekkan', 'Tidak ada', 'mmaulina'),
-(7, 'Banjarbaru akhwat (setiap jum\'at)', 4, 'Mudah dipahami dan mudah dipraktekkan', 'Tidak ada', 'mmaulina'),
-(8, 'Banjarmasin akhwat (setiap sabtu)', 5, 'Mudah dipahami dan mudah dipraktekkan', 'Tidak ada', 'mmaulina'),
-(9, 'Banjarbaru akhwat (setiap jum\'at)', 5, 'Mudah dipahami dan mudah dipraktekkan', 'Lebih gencar lagi promosi tahsinnya', 'mmaulina');
+(11, 'Banjarbaru akhwat (setiap jum\'at)', 4, 'Mudah dipahami dan mudah dipraktekkan', 'Lebih gencar lagi promosi tahsinnya', '2110010730'),
+(12, 'Banjarbaru akhwat (setiap jum\'at)', 5, 'Mudah dipahami, menyenangkan, dan menyentuh hati', 'Lebih gencar lagi promosi tahsinnya', '2010010754'),
+(13, 'Banjarmasin akhwat (setiap sabtu)', 4, 'Mudah dipahami dan mudah dipraktekkan', 'lebih tepat waktu lagi untuk pesertanya', '2101065473'),
+(14, 'Banjarbaru akhwat (setiap jum\'at)', 5, 'Mudah dipahami dan mudah dipraktekkan', 'Lebih gencar lagi promosi tahsinnya', '2010010562'),
+(15, 'Banjarmasin akhwat (setiap sabtu)', 5, 'Mudah dipahami dan mudah dipraktekkan', 'Lebih gencar lagi promosi tahsinnya', 'febri123'),
+(16, 'Banjarmasin ikhwan (setiap malam kamis)', 4, 'Mudah dipahami dan mudah dipraktekkan', 'jangan terlalu malam tahsinnya', '2310010542'),
+(17, 'Banjarbaru akhwat (setiap jum\'at)', 5, 'Mudah dipahami dan mudah dipraktekkan', 'Lebih gencar lagi promosi tahsinnya', '2010010754');
 
 --
 -- Indexes for dumped tables
@@ -13089,6 +13178,12 @@ ALTER TABLE `kelas`
   ADD UNIQUE KEY `nama_kelas` (`nama_kelas`);
 
 --
+-- Indeks untuk tabel `nilai_mhs`
+--
+ALTER TABLE `nilai_mhs`
+  ADD PRIMARY KEY (`id_nilai`);
+
+--
 -- Indeks untuk tabel `pengajar`
 --
 ALTER TABLE `pengajar`
@@ -13117,7 +13212,7 @@ ALTER TABLE `umpan_balik`
 -- AUTO_INCREMENT untuk tabel `anggota`
 --
 ALTER TABLE `anggota`
-  MODIFY `id_anggota` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id_anggota` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 
 --
 -- AUTO_INCREMENT untuk tabel `arabicquran`
@@ -13129,13 +13224,13 @@ ALTER TABLE `arabicquran`
 -- AUTO_INCREMENT untuk tabel `daftarhadir_anggota`
 --
 ALTER TABLE `daftarhadir_anggota`
-  MODIFY `id_dhanggota` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_dhanggota` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT untuk tabel `daftarhadir_pengajar`
 --
 ALTER TABLE `daftarhadir_pengajar`
-  MODIFY `id_dhpengajar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_dhpengajar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT untuk tabel `daftarsurah`
@@ -13147,13 +13242,13 @@ ALTER TABLE `daftarsurah`
 -- AUTO_INCREMENT untuk tabel `halaqoh_tahfidz`
 --
 ALTER TABLE `halaqoh_tahfidz`
-  MODIFY `id_tahfidz` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id_tahfidz` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT untuk tabel `halaqoh_tahsin`
 --
 ALTER TABLE `halaqoh_tahsin`
-  MODIFY `id_tahsin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id_tahsin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT untuk tabel `indonesianquran`
@@ -13165,7 +13260,7 @@ ALTER TABLE `indonesianquran`
 -- AUTO_INCREMENT untuk tabel `jadwal`
 --
 ALTER TABLE `jadwal`
-  MODIFY `id_jadwal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id_jadwal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT untuk tabel `kelas`
@@ -13174,22 +13269,28 @@ ALTER TABLE `kelas`
   MODIFY `id_kelas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
+-- AUTO_INCREMENT untuk tabel `nilai_mhs`
+--
+ALTER TABLE `nilai_mhs`
+  MODIFY `id_nilai` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT untuk tabel `pengajar`
 --
 ALTER TABLE `pengajar`
-  MODIFY `id_pengajar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_pengajar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT untuk tabel `pengguna`
 --
 ALTER TABLE `pengguna`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT untuk tabel `umpan_balik`
 --
 ALTER TABLE `umpan_balik`
-  MODIFY `id_umpanbalik` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_umpanbalik` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
